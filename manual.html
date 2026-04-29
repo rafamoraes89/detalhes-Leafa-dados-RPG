@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manual Leafa Dados RPG</title>
+    <style>
+        :root {
+            --primary: #00ff37;
+            --gold: #ffd700;
+            --bg: #12121f;
+        }
+        body { 
+            font-family: 'Segoe UI', sans-serif; 
+            background-color: var(--bg); 
+            color: #eee; 
+            padding: 20px; 
+            line-height: 1.6;
+        }
+        .container { max-width: 600px; margin: auto; }
+        h1 { color: var(--primary); text-align: center; border-bottom: 1px solid #333; padding-bottom: 10px; }
+        h2 { color: var(--primary); font-size: 1.2rem; margin-top: 25px; display: flex; align-items: center; gap: 10px; }
+        p { margin-bottom: 15px; font-size: 0.95rem; }
+        .feature-card { 
+            background: rgba(255,255,255,0.05); 
+            padding: 15px; 
+            border-radius: 12px; 
+            border-left: 4px solid var(--primary);
+            margin-bottom: 15px;
+        }
+        .highlight { color: var(--gold); font-weight: bold; }
+        ul { padding-left: 20px; }
+        li { margin-bottom: 8px; }
+        code { background: #000; padding: 2px 6px; border-radius: 4px; color: var(--primary); }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Manual do Usuário</h1>
+
+    <p>O <strong>Leafa Dados RPG</strong> é um simulador de alta performance projetado para agilizar as sessões de jogo, oferecendo controle total sobre as probabilidades e automação de ataques complexos.</p>
+
+    <h2>1. Configuração de Mesa (Aba Configurar)</h2>
+    <div class="feature-card">
+        <p>Antes de jogar, defina os parâmetros globais que afetarão suas rolagens na aba principal:</p>
+        <ul>
+            <li><strong>Seleção de Dados:</strong> Adicione até <span class="highlight">4 dados</span> simultâneos à mesa (D4 a D20).</li>
+            <li><strong>Bônus Fixo:</strong> Arraste o slider para definir um modificador fixo (de -40 a +40) que será somado ao total da rodada.</li>
+            <li><strong>Chance de Máximo (Crítico):</strong> Define a probabilidade do dado ignorar o aleatório e cair diretamente no valor máximo.</li>
+            <li><strong>Chance de Reroll:</strong> Define a chance do app detectar um valor baixo e refazer a rolagem automaticamente para obter um resultado melhor ou igual.</li>
+        </ul>
+    </div>
+
+    <h2>2. Dinâmica de Jogo (Aba Jogar)</h2>
+    <div class="feature-card">
+        <p>Com os dados na mesa, você tem comandos de manipulação em tempo real:</p>
+        <ul>
+            <li><strong>Mecânica de Retirada (➖):</strong> Se lançou muitos dados, você pode remover dados específicos da mesa para ajustar a jogada ou limpar o espaço.</li>
+            <li><strong>Botão Voltar (↩):</strong> Se arrependeu de tirar um dado? Use o desfazer para retornar o último dado removido à mesa.</li>
+            <li><strong>Somatório Acumulado (Σ):</strong> Quando ativo, o app limpa o resultado anterior se houver, então ele soma todas as jogadas sucessivas até que você desative a função. Perfeito para magias com muitos dados (ex: jogar 2x e somar).</li>
+        </ul>
+    </div>
+
+    <h2>3. Sistema de Presets (Armas e Habilidades)</h2>
+    <div class="feature-card">
+        <p>Para não precisar configurar a mesa a cada turno, use os <strong>Presets</strong>:</p>
+        <p>Crie "fichas" rápidas com nome (Ex: <em>Arco Longo +1</em>), escolha os dados e o modificador. Ao clicar no <strong>Play (▶)</strong> do preset, o app realiza a rolagem instantânea e exibe um modal com o cálculo detalhado.</p>
+    </div>
+
+    <h2>4. Temas e Estética</h2>
+    <p>O app possui o tema <strong>Azul Arcano</strong> (padrão) e o exclusivo <strong>Dragão Ancião</strong> (Premium), que altera toda a interface para uma estética bronzeada e substitui os visuais dos dados por versões místicas.</p>
+
+    <p style="text-align: center; margin-top: 40px; font-size: 0.8rem; opacity: 0.5;">
+        Leafa Dados RPG - 2026<br>
+        Eleve sua experiência de jogo.
+    </p>
+</div>
+
+</body>
+</html>
